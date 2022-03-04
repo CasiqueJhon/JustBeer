@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.justbeer.R
 import com.example.justbeer.databinding.FragmentDetailBeerBinding
 import com.example.justbeer.model.BeerResultsItem
+import kotlinx.android.synthetic.main.fragment_detail_beer.*
 
 class DetailBeerFragment : Fragment() {
 
@@ -32,7 +33,6 @@ class DetailBeerFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        activity?.title = getString(R.string.beer_detail)
         binding = FragmentDetailBeerBinding.inflate(inflater, container, false)
 
         arguments.let {
@@ -49,6 +49,7 @@ class DetailBeerFragment : Fragment() {
         binding.abvDetailApi.text = String.format("%s%%", beer.abv)
         binding.calendarDetailApi.text = beer.first_brewed
         binding.beerDescriptionDetail.text = beer.description
+        activity?.title = beer.name
         Glide
             .with(binding.root.context)
             .load(beer.image_url)
