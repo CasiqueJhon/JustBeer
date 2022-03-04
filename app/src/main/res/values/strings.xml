@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">JustBeer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="beer_name_item_list">Beer Name</string>
+    <string name="beer_overview_item">Overview</string>
+    <string name="beer_abv_item">ABV</string>
+    <string name="beer_date_item">Date</string>
+    <string name="beer_tagline_item">Tagline</string>
+    <string name="error_load_beer_list">Something goes wrong 😓</string>
+    <string name="beer_list_nav_bar_name">Beer List</string>
+    <string name="beer_name_detail_text">Beer Name:</string>
+    <string name="beer_name_api_detail">beer name api</string>
+    <string name="abv_beer_detail">ABV:</string>
+    <string name="beer_detail">Beer Detail</string>
+</resources>
